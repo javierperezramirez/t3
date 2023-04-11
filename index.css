@@ -1,11 +1,23 @@
 body {
-    background-color: aqua;
+    background-color: rgb(255, 174, 0);
 }
 
 h1 {
-    background-color: brown;
+    background-color: rgb(136, 42, 165);
 }
 
 h2 {
     background-color: yellow;
+}
+
+a {
+    display: inline-block;
+    width: 20vw;
+    max-width: 150px;
+    background-color: red;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 10px black;
+    font-size: 40px;
 }
