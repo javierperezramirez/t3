@@ -24,6 +24,8 @@ function pintar(identificador) {
         cuadro.style.color='black';
         cuadro.innerHTML="*";
         contador+=1;
+    } else {
+        alert("El juego ha terminado, reinicia la partida!!!");
     }
 }
 
