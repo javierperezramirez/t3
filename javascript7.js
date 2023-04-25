@@ -4,6 +4,9 @@
 // creamos una variable para contar las veces que pinta
 var contador=0;
 
+// creamos un array para el tablero
+var tablero= [3,3];
+
 // creamos una funcion que pinte el cuadro con un hover (activo)
 function hoverino(identificador) {
     let id="c"+identificador;
@@ -13,7 +16,7 @@ function hoverino(identificador) {
 
 // creamos una funcion generica para dibujar el simbolo
 function pintar(identificador) {
-    
+
     // ponemos un if para limitar a 3 los dibujos
     if (contador<3) {
         let id="c"+identificador;
