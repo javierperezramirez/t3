@@ -5,13 +5,19 @@
     background-color: rgb(197, 197, 197);
 }
 
+#titulo {
+    text-align: center;
+    margin-top: 5vh;
+    text-shadow: 0.5vw 0.5vh 5px aqua;
+}
+
 #total {
     border-style: solid;
     background-color: rgb(155, 255, 255);
     height: 60vh;
     width: 60vw;
     margin-left: 20vw;
-    margin-top: 20vh;
+    margin-top: 10vh;
     display:flex;
     flex-direction: column;
 }
