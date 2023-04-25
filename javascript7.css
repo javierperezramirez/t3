@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: rgb(197, 197, 197);
 }
 
 #total {
@@ -18,6 +19,7 @@
 #f1 {
     display: flex;
     flex-direction: row;
+    background-color: rgb(155, 255, 255);
 }
 
 #c11 {
@@ -27,6 +29,8 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c12 {
@@ -36,6 +40,8 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c13 {
@@ -45,11 +51,14 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #f2 {
     display: flex;
     flex-direction: row;
+    background-color: rgb(155, 255, 255);
 }
 
 #c21 {
@@ -59,6 +68,8 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c22 {
@@ -68,6 +79,8 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c23 {
@@ -77,11 +90,14 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #f3 {
     display: flex;
     flex-direction: row;
+    background-color: rgb(155, 255, 255);
 }
 
 #c31 {
@@ -91,6 +107,8 @@
     height: 18vh;
     width: 18vw;
     margin-left: 1.3vw;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c32 {
@@ -100,6 +118,8 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
 
 #c33 {
@@ -109,4 +129,6 @@
     width: 18vw;
     margin-left: 1.3vw;
     margin-top: 1.3vh;
+    font-size: 20vh;
+    text-align: center;
 }
