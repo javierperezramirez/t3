@@ -7,6 +7,17 @@ var contador=0;
 // creamos un array para el tablero
 var tablero = [['0','0','0'],['0','0','0'],['0','0','0']];
 
+// pintamos el tablero de la matriz con los seleccionados
+function pintarTablero(identificador) {
+    tablero[identificador]='1';
+}
+
+// comprobamos el tablero de la matriz que sean tres en raya
+function comprobarTablero() {
+    if ((tablero[0,0]=='1')&&(tablero[0,1]=='1')&&(tablero[0,2]=='1')) {
+        alert("Has pintado TRES EN RAYA!!!")
+    }
+}
 
 // creamos una funcion que pinte el cuadro con un hover (activo)
 function hoverino(identificador) {
@@ -25,9 +36,8 @@ function pintar(identificador) {
         cuadro.style.color='black';
         cuadro.innerHTML="*";
         contador+=1;
-        tablero[identificador]='1';
     } else {
-        compruebaMatriz();
+        comprobarTablero();
     }
 }
 
