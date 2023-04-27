@@ -5,7 +5,7 @@
 var contador=0;
 
 // creamos un array para el tablero
-var tablero = [['0','0','0'],['0','0','0'],['0','0','0']];
+var tablero = ['0','0','0','0','0','0','0','0','0'];
 
 // pintamos el tablero de la matriz con los seleccionados
 function pintarTablero(identificador) {
