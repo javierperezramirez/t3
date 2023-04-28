@@ -5,23 +5,12 @@
 var contador=0;
 
 // creamos un array para el tablero
-var tablero = ['0','0','0','0','0','0','0','0','0'];
+var tablero = [['0','0','0'],['0','0','0'],['0','0','0']];
 
-// pintamos el tablero de la matriz con los seleccionados
-function pintarTablero(identificador) {
-    tablero[identificador]='1';
-}
-
-// comprobamos el tablero de la matriz que sean tres en raya
-function comprobarTablero() {
-    if ((tablero[0,0]=='1')&&(tablero[0,1]=='1')&&(tablero[0,2]=='1')) {
-        alert("Has pintado TRES EN RAYA!!!")
-    }
-}
 
 // creamos una funcion que pinte el cuadro con un hover (activo)
 function hoverino(identificador) {
-    let id="c"+identificador;
+    let id='c'+identificador;
     let cuadro=document.getElementById(id);
     cuadro.style.backgroundColor='rgb(0, 150, 150)';
 }
@@ -31,29 +20,32 @@ function pintar(identificador) {
 
     // ponemos un if para limitar a 3 los dibujos
     if (contador<3) {
-        let id="c"+identificador;
+        let id='c'+identificador;
         let cuadro=document.getElementById(id);
         cuadro.style.color='black';
         cuadro.innerHTML="*";
         contador+=1;
+        tablero[identificador]='1';
     } else {
-        comprobarTablero();
+        compruebaArray();
     }
 }
 
 // creamos una funcion que pinta el cuadro con un hover (inactivo)
 function hoverinoff(identificador) {
-    let id="c"+identificador;
+    let id='c'+identificador;
     let cuadro=document.getElementById(id);
     cuadro.style.backgroundColor='rgb(0, 218, 218)';
 }
 
-function compruebaMatriz() {
-    for (var i=0;i<3;i++) {
-        for (var j=0;j<3;j++) {
-            if ((tablero[i,j]==1)&&(tablero[i,j+1])&&(tablero[i,j+2])) {
-                alert("Has puesto TRES EN RAYA !!!!!")
+function compruebaArray() {
+    for (var i=0;i<9;i++) {
+            if ((tablero[i]==1)&&(tablero[i+1])&&(tablero[i+2])) {
+                alert("Has puesto TRES EN RAYA !!!!!");
+            } else if ((tablero[i]==1)&&(tablero[i+3]==1)&&(tablero[i+6]==1)) {
+                alert("Has puesto TRES EN RAYA !!!!!");
+            } else {
+                alert("Ohhh, no has puesto tres en raya...");
             }
-        }
     }
 }
