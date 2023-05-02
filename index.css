@@ -52,11 +52,15 @@ a:hover {
     cursor: pointer;
 }
 
-div {
+#titulo {
     border-radius:50px;
     background-color: rgb(0, 100, 0);
     width: 70%;
     border: 10px outset;
     margin:20px auto;
     box-shadow: 5px 5px 5px rgb(190, 190, 190);
+}
+
+#menu {
+    margin-left:10vw;
 }

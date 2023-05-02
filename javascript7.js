@@ -11,7 +11,7 @@ var tablero = [['0','0','0'],['0','0','0'],['0','0','0']];
 function hoverino(identificador) {
     let id='c'+identificador;
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor='rgb(0, 150, 150)';
+    cuadro.style.backgroundColor='rgb(0, 50, 0, 0.8)';
 
 }
 
@@ -36,7 +36,7 @@ function pintar(identificador) {
 function hoverinoff(identificador) {
     let id='c'+identificador;
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor='rgb(0, 218, 218)';
+    cuadro.style.backgroundColor='rgb(0, 250, 0, 0.6)';
 }
 
 function compruebaArray() {
