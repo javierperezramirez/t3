@@ -23,7 +23,7 @@ function pintar(identificador) {
         let id='c'+identificador;
         let cuadro=document.getElementById(id);
         cuadro.style.color='black';
-        cuadro.innerHTML="*";
+        cuadro.innerHTML="☻";
         contador+=1;
         tablero[identificador]='1';
         compruebaArray();
