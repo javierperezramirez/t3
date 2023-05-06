@@ -1,2 +1,2 @@
-alert("Pagina de TRES EN RAYA                                                                        Javier Pérez Ramírez (1 DAW)");
+alert("Javier Pérez Ramírez     /     Curso: 1-DAW                                                                                Trabajo: Musica");
 window.history.back();
