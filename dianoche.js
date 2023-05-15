@@ -23,8 +23,9 @@ function ponerModoDia() {
 
     // Ponemos letra oscura sobre fondo blanco
     let todo=document.getElementById("todo");
-    todo.style.color="black";
-    todo.style.backgroundColor="white";
+    // todo.style.color="black";
+    // todo.style.backgroundColor="white";
+    todo.style.backgroundImage="url('Imagenes/bajoblanco1.jpg')";
     window.localStorage.setItem("modoGuardado","dia");
     // Ocultamos el sol
     let iconoDia=document.getElementById("dia");
@@ -38,8 +39,9 @@ function ponerModoNoche() {
 
     // Ponemos letra blanco sobre fondo negro
     let todo=document.getElementById("todo");
-    todo.style.color="white";
-    todo.style.backgroundColor="black";
+    // todo.style.color="white";
+    // todo.style.backgroundColor="black";
+    todo.style.backgroundImage="url('Imagenes/bajonegro.jpg')";
     window.localStorage.setItem("modoGuardado","noche");
     // Mostramos el sol
     let iconoDia=document.getElementById("dia");
