@@ -11,7 +11,7 @@ if (modo=="dia") {
 function leerModoActual() {
     // Devolvera modo DIA si no hay modo guardado
     let modo=window.localStorage.getItem("modoGuardado");
-    console.log(modo);
+    console.log('Modo Pantalla: '+modo);
     if (!modo) {
         // Devolvera modo DIA si no hay modo guardado
         modo="dia";
