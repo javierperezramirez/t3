@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Trimestre 3 - JAVIER PÉREZ</title>
-        <link rel="stylesheet" href="index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trimestre 3 - JAVIER PÉREZ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+</head>
 
 <body>
     <div id="titulo">
         <h1>Javier Pérez Ramírez</h1>
         <h2>CURSO 1-DAW</h2>
+        <div id="zonaModo">
+            <img id="dia" src="Imagenes/sol.png" onclick="ponerModoDia()">
+            <img id="noche" src="Imagenes/luna.png" onclick="ponerModoNoche()">
+        </div>
     </div>
     <br></br>
     <br></br>
     <div id="menu">
-    <h3>MENU:</h3><br></br>
-    <p>
-    <ol>
-        <li><a href="javascript7.html" target="_blank">Un Juego</a></li>
-        <br></br>
-        <li id="informacion"><a href="javascript72.html">Más Información</a></li>
-        <br></br>
-    </ol>
-    </p>
+        <h3>MENU:</h3>
+        <p>
+        <ol>
+            <li><a href="javascript7.html" target="_blank">Un Juego</a></li>
+            <br></br>
+            <li id="informacion"><a href="javascript72.html">Más Información</a></li>
+            <br></br>
+
+            <section id="ajustes">
+
+                <p id="esteParrafo">Elija un Color</p>
+                <input type="color" name="colorElegido" />
+                <br />
+
+                <p>Elija la fuente de este documento</p>
+                <select name="tamFuente">
+                    <option value="0.8">Pequeña</option>
+                    <option value="1.0" selected="select">Mediana</option>
+                    <option value="1.4">Grande</option>
+                </select>
+
+                <button type="button" onclick="aplicarCambios()">APLICAR</button>
+
+            </section>
+        </ol>
+        </p>
     </div>
+
+    <script>
+        function aplicarCambios() {
+            var color = document.getElementsByName('colorElegido')[0];
+            console.log('color elegido ' + color.value);
+
+            var tam = document.getElementsByName('tamFuente')[0];
+            var tamelegido = tam[tam.selectedIndex].value;
+
+            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+            document.documentElement.style.setProperty("--colorNormal",color.value);
+            document.getElementById('mensaje').innerHTML = "APLICADO";
+        }
+    </script>
+    <script src="./dianoche.js"></script>
 </body>
+
 </html>
