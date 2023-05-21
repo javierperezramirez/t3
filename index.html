@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trimestre 3 - JAVIER PÉREZ</title>
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
 </head>
 
 <body id="todo">
@@ -23,67 +23,26 @@
     <br></br>
     <div id="menu">
         <h3>MENU:</h3>
-        <p>
         <ol>
             <li><a href="javascript7.html" target="_blank">Un Juego</a></li>
             <br></br>
             <li id="informacion"><a href="javascript72.html">Más Información</a></li>
             <br></br>
-
-            <section id="ajustes">
-
-                <p id="esteParrafo">Elija un Color</p>
-                <input type="color" name="colorElegido" />
-                <br />
-
-                <p>Elija la fuente de este documento</p>
-                <select name="tamFuente">
-                    <option value="0.8">Pequeña</option>
-                    <option value="1.0" selected="select">Mediana</option>
-                    <option value="1.4">Grande</option>
-                </select>
-
-                <button type="button" onclick="aplicarCambios()">APLICAR</button>
-
-            </section>
         </ol>
-        </p>
     </div>
-
+    <div id="ajustes">
+        <p id="esteParrafo">Elija un Color</p>
+        <input type="color" name="colorElegido" />
+        <br />
+        <p>Elija la fuente de este documento</p>
+        <select name="tamFuente">
+            <option value="0.8">Pequeña</option>
+            <option value="1.0" selected="select">Mediana</option>
+            <option value="1.4">Grande</option>
+        </select>
+        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+    </div>
     <script src="./index.js"></script>
-    <script>
-        
-        var color=leerColorActual();
-           if (color!=null) {
-                document.documentElement.style.setProperty("--colorNormal",color.value);
-           }
-        
-        function leerColorActual() {
-        // Devolvera modo DIA si no hay modo guardado
-            let color=window.localStorage.getItem("colorElegido");
-                console.log('Color Fuentes: '+color);
-            if (!color) {
-                // Devolvera modo DIA si no hay modo guardado
-                color=document.getElementsByName('colorElegido')[0];
-            }
-            return color;
-        }
-        function aplicarCambios() {
-            var color = document.getElementsByName('colorElegido')[0];
-            console.log('Color Elegido: ' + color.value);
-            // Guardamos el localStorage
-            window.localStorage.setItem("colorElegido",color.value);
-
-            var tam = document.getElementsByName('tamFuente')[0];
-            var tamelegido = tam[tam.selectedIndex].value;
-            // Guardamos el localStorage
-            window.localStorage.setItem("tamGuardado",tam[tam.selectedIndex].value);
-
-            document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
-            document.documentElement.style.setProperty("--colorNormal",color.value);
-            // document.getElementById('mensaje').innerHTML = "APLICADO";
-        }
-    </script>
 </body>
 
 </html>
