@@ -37,7 +37,7 @@ document.documentElement.style.setProperty("--colorNormal", color);
 var tamelegido = leerTamActual()
 document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
 var nombre = leerNombreActual()
-document.getElementById("nombre").innerHTML=nombre;
+document.getElementById("actualUsuario").innerHTML=nombre;
 
 // FUNCION PARA LEER EL NOMBRE GUARDADO
 function leerNombreActual() {
