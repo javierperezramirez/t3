@@ -265,14 +265,15 @@ img {
     position: fixed;
     top: -100vh;
     left: 0;
-    height: 200px;
-    width: 80%;
+    height: 300px;
+    width: 60%;
     margin-top: 150px;
-    margin-left: 10%;
+    margin-left: 20%;
 }
 
 #textoModal {
-    font-size: 2vw;
+    padding: 10px;
+    font-size: 1.5vw;
     text-align: center;
     text-shadow: 1px 1px 5px black;
 }
@@ -316,7 +317,7 @@ img {
 #cerrar-modal + label {
     position: fixed;
     top: 150px;
-    right: 10%;
+    right: 20%;
     z-index: 100;
     color: #fff;
     font-weight: bold;
