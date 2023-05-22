@@ -58,6 +58,15 @@ a:hover {
     background-color: transparent;
 }
 
+#zonaNombre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
 img {
     object-fit: contain;
     width: 100%;

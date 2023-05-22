@@ -36,7 +36,15 @@ var color = leerColorActual()
 document.documentElement.style.setProperty("--colorNormal", color);
 var tamelegido = leerTamActual()
 document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+var nombre = leerNombreActual()
 
+// FUNCION PARA LEER EL NOMBRE GUARDADO
+function leerNombreActual() {
+    // Devolvera el nombre guardado en sessionstorage
+    let nombre = window.sessionStorage.getItem("nombreElegido");
+    console.log('Nombre Leido: ' + nombre);
+    return nombre;
+}
 // FUNCION PARA LEER EL COLOR GUARDADO
 function leerColorActual() {
     // Devolvera el color guardado en localstorage

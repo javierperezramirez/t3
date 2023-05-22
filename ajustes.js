@@ -50,7 +50,16 @@ var color = leerColorActual()
 document.documentElement.style.setProperty("--colorNormal", color);
 var tamelegido = leerTamActual()
 document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+var nombre = leerNombreActual()
 
+
+// FUNCION PARA LEER EL NOMBRE GUARDADO
+function leerNombreActual() {
+    // Devolvera el nombre guardado en sessionstorage
+    let nombre = window.sessionStorage.getItem("nombreElegido");
+    console.log('Nombre Leido: ' + nombre);
+    return nombre;
+}
 // FUNCION PARA LEER EL COLOR GUARDADO
 function leerColorActual() {
     // Devolvera el color guardado en localstorage
@@ -74,8 +83,13 @@ function leerTamActual() {
     return tamelegido;
 }
 
-// FUNCION PARA APLICAR LOS CAMBIOS DE TAMAÑO/COLOR ELEGIDOS
+// FUNCION PARA APLICAR LOS CAMBIOS DE NOMBRE/TAMAÑO/COLOR ELEGIDOS
 function aplicarCambios() {
+    let nombre = document.getElementsByName('nombreElegido')[0];
+    console.log('Nombre Elegido: '+ nombre.value);
+    // Guardamos el nombre en sessionStorage
+    window.sessionStorage.setItem("nombreElegido",nombre.value);
+
     let color = document.getElementsByName('colorElegido')[0];
     console.log('Color Elegido: ' + color.value);
     // Guardamos el color en localStorage
