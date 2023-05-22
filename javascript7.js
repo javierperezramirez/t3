@@ -8,7 +8,7 @@ var tablero = [['0','0','0'],['0','0','0'],['0','0','0']];
 function hoverino(identificador) {
     let id='c'+identificador;
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor='rgb(0, 50, 0, 0.8)';
+    cuadro.style.backgroundColor='rgb(50, 50, 50, 0.8)';
 
 }
 // creamos una funcion generica para dibujar el simbolo
@@ -24,34 +24,34 @@ function pintar(identificador) {
         tablero[identificador]='1';
         compruebaArray();
     } else {
-        alert("Juego finalizado, reincia la pagina!!!");
+        alert("Juego finalizado, reincie la pagina o regrese al Inicio!!!");
     }
 }
 // creamos una funcion que pinta el cuadro con un hover (inactivo)
 function hoverinoff(identificador) {
     let id='c'+identificador;
     let cuadro=document.getElementById(id);
-    cuadro.style.backgroundColor='rgb(0, 250, 0, 0.6)';
+    cuadro.style.backgroundColor='rgb(200, 200, 200, 0.6)';
 }
 function compruebaArray() {
     if ((tablero[0]=='1')&&(tablero[1]=='1')&&(tablero[2]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[3]=='1')&&(tablero[4]=='1')&&(tablero[5]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[6]=='1')&&(tablero[7]=='1')&&(tablero[8]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[0]=='1')&&(tablero[3]=='1')&&(tablero[6]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[1]=='1')&&(tablero[4]=='1')&&(tablero[7]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[2]=='1')&&(tablero[5]=='1')&&(tablero[8]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[0]=='1')&&(tablero[4]=='1')&&(tablero[8]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if ((tablero[2]=='1')&&(tablero[4]=='1')&&(tablero[6]=='1')) {
-        alert("Has puesto TRES EN RAYA !!!!!");
+        alert("Ha puesto TRES EN RAYA !!!!!");
     } else if (contador==3) {
-        alert("Ohhhhh, no has puesto tres en raya....");
+        alert("Ohhhhh, no ha puesto tres en raya....");
     }
 
 }
