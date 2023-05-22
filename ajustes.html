@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+
+<body id="todo">
+    <div id="titulo">
+        <h1>Javier Pérez Ramírez</h1>
+        <h2>CURSO 1-DAW</h2>
+        <h1>AJUSTES</h1>
+        <div id="zonaModo">
+            <img id="dia" src="Imagenes/BajoBlancoIco.png" onclick="ponerModoDia()" title="Modo Dia">
+            <img id="noche" src="Imagenes/BajoNegroIco.png" onclick="ponerModoNoche()" title="Modo Noche">
+        </div>
+    </div>
+    <br></br>
+    <br></br>
+    <div id="menu">
+        <h3>MENU:</h3>
+        <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <br></br>
+            <li>Ajustes</li>
+            <br></br>
+            <li id="informacion"><a href="javascript72.html">Canciones</a></li>
+            <br></br>
+        </ol>
+    </div>
+    <div id="ajustes">
+        <p id="esteParrafo">Elija un Color</p>
+        <input type="color" name="colorElegido" />
+        <br />
+        <p>Elija la fuente de este documento</p>
+        <select name="tamFuente">
+            <option value="0.8">Pequeña</option>
+            <option value="1.0" selected="select">Mediana</option>
+            <option value="1.4">Grande</option>
+        </select>
+        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+    </div>
+    <script src="./ajustes.js"></script>
+</body>
+
+</html>

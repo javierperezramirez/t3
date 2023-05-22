@@ -20,15 +20,29 @@ function leerModoActual() {
 }
 // FUNCION PORNER EN MODO DIA
 function ponerModoDia() {
-    // Ponemos fondo de pantalla modo dia
+    // Ponemos el fondo de pantalla modo dia
     let todo = document.getElementById("todo");
     todo.style.backgroundImage = "url('Imagenes/bajoblanco1.jpg')";
+    window.localStorage.setItem("modoGuardado", "dia");
+    // Ocultamos el sol
+    let iconoDia = document.getElementById("dia");
+    iconoDia.style.display = "none";
+    // Mostramos la luna
+    let iconoNoche = document.getElementById("noche");
+    iconoNoche.style.display = "block";
 }
 // FUNCION PONER EN MODO NOCHE
 function ponerModoNoche() {
-    // Ponemos fondo de pantalla modo noche
+    // Ponemos el fondo de pantalla modo noche
     let todo = document.getElementById("todo");
     todo.style.backgroundImage = "url('Imagenes/bajonegro.jpg')";
+    window.localStorage.setItem("modoGuardado", "noche");
+    // Mostramos el sol
+    let iconoDia = document.getElementById("dia");
+    iconoDia.style.display = "block";
+    // Ocultamos la luna
+    let iconoNoche = document.getElementById("noche");
+    iconoNoche.style.display = "none";
 }
 
 // CODIGO PARA APLICAR EL COLOR Y TAMAÑO GUARDADOS EN LOCALSTORAGE
@@ -58,4 +72,21 @@ function leerTamActual() {
         tamelegido = 1;
     }
     return tamelegido;
+}
+
+// FUNCION PARA APLICAR LOS CAMBIOS DE TAMAÑO/COLOR ELEGIDOS
+function aplicarCambios() {
+    let color = document.getElementsByName('colorElegido')[0];
+    console.log('Color Elegido: ' + color.value);
+    // Guardamos el color en localStorage
+    window.localStorage.setItem("colorElegido", color.value);
+
+    let tam = document.getElementsByName('tamFuente')[0];
+    let tamelegido = tam[tam.selectedIndex].value;
+    // Guardamos el tamaño en localStorage
+    window.localStorage.setItem("tamGuardado", tam[tam.selectedIndex].value);
+
+    document.documentElement.style.fontSize = parseFloat(tamelegido) + "rem";
+    document.documentElement.style.setProperty("--colorNormal", color.value);
+    // document.getElementById('mensaje').innerHTML = "APLICADO";
 }
