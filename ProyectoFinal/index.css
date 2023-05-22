@@ -1,0 +1,342 @@
+:root {
+    --colorNormal: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+* {
+    box-sizing:border-box;
+    font-family:'Bangers';
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5em;
+    text-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+h3 {
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    font-size: 2em;
+    margin-left: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1em;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+p, h1, h2, h3, h4, li, a {
+    color:var(--colorNormal);
+}
+
+p, h4, li, a {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+li {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    margin-left: 30px;
+}
+
+a {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    text-decoration:none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+#menu {
+    margin-left:10vw;
+}
+
+#zonaModo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+#zonaNombre {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+}
+
+img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+}
+
+#ajustes {
+    text-align: right;
+    margin-right: 10vw;
+}
+
+/* Codigo CSS del juego de tres en raya */
+
+#total {
+    border-style: solid;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+    height: 60vh;
+    width: 60vw;
+    margin-left: 20vw;
+    margin-top: 10vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#f1 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#c1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#c2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#f2 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#c4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#c5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#f3 {
+    display: flex;
+    flex-direction: row;
+    background-image:linear-gradient(
+        0deg,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    )
+    ,url(Imagenes/Prog2.jpg);
+}
+
+#c6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    margin-top: 1.3vh;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    font-size: 15vh;
+}
+
+#c7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+#c8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(200, 200, 200, 0.6);
+    border-style: solid;
+    height: 18vh;
+    width: 18vw;
+    margin-left: 1.3vw;
+    margin-top: 1.3vh;
+    font-size: 15vh;
+}
+
+/* CODIGO PARA MOSTRAR EL MODAL EN LA PAGINA */
+
+#modal {
+    border:10px steelblue solid;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 200px;
+    width: 80%;
+    margin-top: 150px;
+    margin-left: 10%;
+}
+
+#textoModal {
+    font-size: 2vw;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+}
+
+#nombreModal {
+    font-size: 3vw;
+    text-shadow: 3px 3px 5px black;
+}
+
+#mostrar-modal {
+    display: none;
+}
+
+#mostrar-modal + label {
+    border-radius: 20px;
+    background: steelblue;
+    display: table;
+    margin: auto;
+    color: #fff;
+    line-height: 3;
+    padding: 0 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#mostrar-modal + label:hover {
+    background: #38678f;
+}
+
+#mostrar-modal:checked ~ #modal {
+    top: 0;
+}
+
+#cerrar-modal {
+    display: none;
+}
+
+#cerrar-modal:checked ~ #modal {
+    top: -100vh;
+}
+
+#cerrar-modal + label {
+    position: fixed;
+    top: 150px;
+    right: 10%;
+    z-index: 100;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    background: tomato;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#cerrar-modal + label {
+    display: none;
+}
+
+#mostrar-modal:checked ~ #cerrar-modal + label {
+    display: block;
+}
+
+#cerrar-modal:checked + label {
+    display: none;
+}
