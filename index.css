@@ -54,8 +54,22 @@ a:hover {
     cursor: pointer;
 }
 
+#contenedorTotal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
 #menu {
+    width: 30%;
     margin-left:10vw;
+}
+
+#contenido {
+    margin-right: 10vw;
+    width: 50%;
+    text-align: center;
 }
 
 #zonaModo {
@@ -84,8 +98,8 @@ img {
 }
 
 #ajustes {
-    text-align: right;
-    margin-right: 10vw;
+    text-align: center;
+    margin-right: 20vw;
 }
 
 /* Codigo CSS del juego de tres en raya */

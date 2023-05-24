@@ -25,36 +25,38 @@
     </div>
     <br></br>
     <br></br>
-    <div id="menu">
-        <h3>MENU:</h3>
-        <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <br></br>
-            <li>Ajustes</li>
-            <br></br>
-            <li><a href="javascript7.html">Juego</a></li>
-            <br></br>
-            <li><a href="soldadito.xml">Cancion Soldadito</a></li>
-            <br></br>
-            <li><a href="alcantar.xml">Cancion Al cantar</a></li>
-            <br></br>
-            <li><a href="modal.html">Modal</a></li>
-            <br></br>
-        </ol>
-    </div>
-    <div id="ajustes">
-        <p>Escriba su nombre</p>
-        <input type="text" name="nombreElegido" />
-        <p>Elija un Color</p>
-        <input type="color" name="colorElegido" />
-        <br />
-        <p>Elija la fuente de este documento</p>
-        <select name="tamFuente">
-            <option value="0.8">Pequeña</option>
-            <option value="1.0" selected="select">Mediana</option>
-            <option value="1.4">Grande</option>
-        </select>
-        <button type="button" onclick="aplicarCambios()">APLICAR</button>
+    <div id="contenedorTotal">
+        <div id="menu">
+            <h3>MENU:</h3>
+            <ol>
+                <li><a href="index.html">Inicio</a></li>
+                <br></br>
+                <li>Ajustes</li>
+                <br></br>
+                <li><a href="javascript7.html">Juego</a></li>
+                <br></br>
+                <li><a href="soldadito.xml">Cancion Soldadito</a></li>
+                <br></br>
+                <li><a href="alcantar.xml">Cancion Al cantar</a></li>
+                <br></br>
+                <li><a href="modal.html">Modal</a></li>
+                <br></br>
+            </ol>
+        </div>
+        <div id="ajustes">
+            <p>Escriba su nombre</p>
+            <input type="text" name="nombreElegido" />
+            <p>Elija un Color</p>
+            <input type="color" name="colorElegido" />
+            <br />
+            <p>Elija la fuente de este documento</p>
+            <select name="tamFuente">
+                <option value="0.8">Pequeña</option>
+                <option value="1.0" selected="select">Mediana</option>
+                <option value="1.4">Grande</option>
+            </select>
+            <button type="button" onclick="aplicarCambios()">APLICAR</button>
+        </div>
     </div>
     <script src="./ajustes.js"></script>
 </body>
