@@ -101,6 +101,9 @@ function leerNombreActual() {
     // Devolvera el nombre guardado en sessionstorage
     let nombre = window.sessionStorage.getItem("nombreElegido");
     console.log('Nombre Leido: ' + nombre);
+    if ((nombre==null)||(nombre=="")) {
+        nombre="sin identificar";
+    }
     return nombre;
 }
 // FUNCION PARA LEER EL COLOR GUARDADO
@@ -108,8 +111,8 @@ function leerColorActual() {
     // Devolvera el color guardado en localstorage
     let color = window.localStorage.getItem("colorElegido");
     console.log('Color Leido: ' + color);
-    if ('colorElegido' == null) {
-        // Devolvera el color por rojo por defecto
+    if (color == null) {
+        // Devolvera el color rojo por defecto
         color = '#ff0000';
     }
     return color;
