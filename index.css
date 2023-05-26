@@ -5,8 +5,8 @@
 
 * {
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
+    background-position:top;
     box-sizing:border-box;
     font-family:'Bangers';
 }
