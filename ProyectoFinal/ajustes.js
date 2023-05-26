@@ -113,3 +113,21 @@ function aplicarCambios() {
 
     // document.getElementById('mensaje').innerHTML = "APLICADO";
 }
+
+// METODO PARA EL FUNCIONAMIENTO DE LA VENTANA MODAL
+
+// Obtener referencias a los elementos del DOM
+var modal = document.getElementById('modal');
+var modalLink = document.getElementById('modal-link');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Abrir la ventana modal al hacer clic en el enlace
+modalLink.onclick = function(event) {
+  event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+  modal.style.display = 'block';
+}
+
+// Cerrar la ventana modal al hacer clic en el botón de cerrar
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
+}

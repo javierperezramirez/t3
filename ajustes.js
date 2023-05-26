@@ -24,10 +24,10 @@ function ponerModoDia() {
     let todo = document.getElementById("todo");
     todo.style.backgroundImage = "url('Imagenes/bajoblanco1.jpg')";
     window.localStorage.setItem("modoGuardado", "dia");
-    // Ocultamos el sol
+    // Ocultamos el bajo blanco
     let iconoDia = document.getElementById("dia");
     iconoDia.style.display = "none";
-    // Mostramos la luna
+    // Mostramos la bajo negro
     let iconoNoche = document.getElementById("noche");
     iconoNoche.style.display = "block";
 }
@@ -37,10 +37,10 @@ function ponerModoNoche() {
     let todo = document.getElementById("todo");
     todo.style.backgroundImage = "url('Imagenes/bajonegro.jpg')";
     window.localStorage.setItem("modoGuardado", "noche");
-    // Mostramos el sol
+    // Mostramos el bajo blanco
     let iconoDia = document.getElementById("dia");
     iconoDia.style.display = "block";
-    // Ocultamos la luna
+    // Ocultamos la bajo negro
     let iconoNoche = document.getElementById("noche");
     iconoNoche.style.display = "none";
 }
@@ -112,4 +112,22 @@ function aplicarCambios() {
     }
 
     // document.getElementById('mensaje').innerHTML = "APLICADO";
+}
+
+// METODO PARA EL FUNCIONAMIENTO DE LA VENTANA MODAL
+
+// Obtener referencias a los elementos del DOM
+var modal = document.getElementById('modal');
+var modalLink = document.getElementById('modal-link');
+var closeBtn = document.getElementsByClassName('close')[0];
+
+// Abrir la ventana modal al hacer clic en el enlace
+modalLink.onclick = function(event) {
+  event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+  modal.style.display = 'block';
+}
+
+// Cerrar la ventana modal al hacer clic en el botón de cerrar
+closeBtn.onclick = function() {
+  modal.style.display = 'none';
 }
