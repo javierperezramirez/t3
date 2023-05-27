@@ -24,7 +24,7 @@ function pintar(identificador) {
         tablero[identificador]='1';
         compruebaArray();
     } else {
-        alert("Juego finalizado, reincie la pagina o regrese al Inicio!!!");
+        alert("Juego finalizado, reincie la pagina para volver a jugar!!!");
     }
 }
 // creamos una funcion que pinta el cuadro con un hover (inactivo)
