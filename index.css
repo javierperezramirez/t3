@@ -116,10 +116,8 @@ img {
         rgba(0,0,0,0.7)
     )
     ,url(Imagenes/Prog2.jpg);
-    height: 60vh;
-    width: 60vw;
-    margin-left: 20vw;
-    margin-top: 10vh;
+    width: 40%;
+    margin-right: 30%;
     display:flex;
     flex-direction: column;
 }
@@ -141,11 +139,10 @@ img {
     justify-content: center;
     background-color: rgba(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c1 {
@@ -154,11 +151,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c2 {
@@ -167,11 +163,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #f2 {
@@ -191,11 +186,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c4 {
@@ -204,11 +198,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c5 {
@@ -217,11 +210,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #f3 {
@@ -241,11 +233,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    margin-top: 1.3vh;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c7 {
@@ -254,11 +245,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c8 {
@@ -267,11 +257,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 1.3vw;
-    margin-top: 1.3vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 /* CODIGO PARA MOSTRAR EL MODAL EN LA PAGINA */

@@ -139,11 +139,10 @@ img {
     justify-content: center;
     background-color: rgba(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c1 {
@@ -152,11 +151,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c2 {
@@ -165,11 +163,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #f2 {
@@ -189,11 +186,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c4 {
@@ -202,11 +198,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c5 {
@@ -215,11 +210,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #f3 {
@@ -239,11 +233,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c7 {
@@ -252,11 +245,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 #c8 {
@@ -265,11 +257,10 @@ img {
     justify-content: center;
     background-color: rgb(200, 200, 200, 0.6);
     border-style: solid;
-    height: 18vh;
-    width: 18vw;
-    margin-left: 0.5vw;
-    margin-top: 0.5vh;
-    font-size: 15vh;
+    height: 16vh;
+    width: 16vw;
+    margin: 0.5vw;
+    font-size: 7vw;
 }
 
 /* CODIGO PARA MOSTRAR EL MODAL EN LA PAGINA */
